@@ -1,9 +1,7 @@
 <?php
 return [
-    'pay_test_mode' => true,
-    'TEST_GETAWAY_URL' => 'https://web.rbsuat.com/ab/rest/',
-    'GETAWAY_URL' => 'https://pay.alfabank.kz/payment/rest/',
-    'mobile_test_link' =>  'https://web.rbsuat.com/ab/merchants/globalpay_kz/mobile_payment_ru.html?mdOrder=',
-    'RETURN_URL' => '/',
-
+    'pay_test_mode' => env('pay_test_mode', true),
+    'TEST_GETAWAY_URL' => env('TEST_GETAWAY_URL', 'https://web.rbsuat.com/ab/rest/'),
+    'GETAWAY_URL' => env('GETAWAY_URL', 'https://pay.alfabank.ru/payment/rest/') ,
+    'RETURN_URL' => env('RETURN_URL', '/'),
 ];

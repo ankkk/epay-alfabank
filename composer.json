@@ -26,5 +26,9 @@
                 "Dosarkz\\EPayAlfaBank\\AlfaBankServiceProvider"
             ]
         }
+    },
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*"
     }
 }

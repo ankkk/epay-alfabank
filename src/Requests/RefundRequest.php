@@ -24,10 +24,10 @@ class RefundRequest extends Request
     public function rules()
     {
         return [
-            'userName'              =>  'required',
-            'password'              =>  'required',
-            'orderId'               =>  'required',
-            'amount'                =>  'required',
+            'userName' => 'required',
+            'password' => 'required',
+            'orderId' => 'required',
+            'amount' => 'required',
         ];
 
     }

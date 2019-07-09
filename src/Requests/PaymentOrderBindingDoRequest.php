@@ -24,11 +24,11 @@ class PaymentOrderBindingDoRequest extends Request
     public function rules()
     {
         return [
-            'userName'              =>  'required',
-            'password'              =>  'required',
-            'mdOrder'               =>  'required',
-            'bindingId'             =>  'required',
-            'ip'                    =>  'required'
+            'userName' => 'required',
+            'password' => 'required',
+            'mdOrder' => 'required',
+            'bindingId' => 'required',
+            'ip' => 'required'
         ];
 
     }

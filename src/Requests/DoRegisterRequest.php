@@ -24,11 +24,11 @@ class DoRegisterRequest extends Request
     public function rules()
     {
         return [
-            'userName'              =>  'required',
-            'password'              =>  'required',
-            'orderNumber'           =>  'required',
-            'amount'                =>  'required',
-            'returnUrl'             =>  'required'
+            'userName' => 'required',
+            'password' => 'required',
+            'orderNumber' => 'required',
+            'amount' => 'required',
+            'returnUrl' => 'required'
         ];
 
     }

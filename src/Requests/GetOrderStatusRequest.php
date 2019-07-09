@@ -24,9 +24,9 @@ class GetOrderStatusRequest extends Request
     public function rules()
     {
         return [
-            'userName'              =>  'required',
-            'password'              =>  'required',
-            'orderId'           =>  'required',
+            'userName' => 'required',
+            'password' => 'required',
+            'orderId' => 'required',
         ];
 
     }

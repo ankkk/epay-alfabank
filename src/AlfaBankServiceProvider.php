@@ -1,4 +1,5 @@
 <?php
+
 namespace Dosarkz\EPayAlfaBank;
 
 use Illuminate\Support\Facades\App;
@@ -13,13 +14,13 @@ class AlfaBankServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-         $this->publishes([
-             __DIR__ . '/Config/alfabank.php' => config_path('alfabank.php'),
-         ]);
+        $this->publishes([
+            __DIR__ . '/Config/alfabank.php' => config_path('alfabank.php'),
+        ]);
 
-         $this->mergeConfigFrom(
-             __DIR__ . '/Config/alfabank.php', 'alfabank'
-         );
+        $this->mergeConfigFrom(
+            __DIR__ . '/Config/alfabank.php', 'alfabank'
+        );
     }
 
     /**
@@ -29,8 +30,7 @@ class AlfaBankServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton("alfabank", function($app)
-        {
+        $this->app->singleton("alfabank", static function ($app) {
             return new AlfaBankRepository();
         });
     }
