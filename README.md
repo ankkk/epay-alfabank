@@ -4,7 +4,7 @@ Equiring system from Alfa Bank
 # Install
 
 ```
-  composer require dosarkz/epay-alfabank
+  composer require ankkk/epay-alfabank
 ```
 
 # Service provider
@@ -24,17 +24,17 @@ Equiring system from Alfa Bank
 use Dosarkz\EPayAlfaBank\Facades\AlfaBank;
 use Dosarkz\EPayAlfaBank\Requests\DoRegisterRequest;
 
- $params = [
+$params = [
     'userName' => '*',
-                    'password' =>  '*',
-                    'orderNumber' => '*',
-                    'amount'    => '*',
-                    'currency' => 398,
-                    'returnUrl' => '*',
-                    'description'   => '*',
-                    'language'  => '*',
-                    'pageView'  => '*',
- ]
- 
+    'password' =>  '*',
+    'orderNumber' => '*',
+    'amount'    => '*',
+    'currency' => 398,
+    'returnUrl' => '*',
+    'description'   => '*',
+    'language'  => '*',
+    'pageView'  => '*',
+];
+
  $pay = AlfaBank::registerDo(new DoRegisterRequest($params));
  ```
